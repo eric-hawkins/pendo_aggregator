@@ -5,29 +5,29 @@ class Aggregator
   def initialize
     @query_json ='
     {
-        "response": {
-            "mimeType": "application/json"
-        },
-        "request": {
-            "requestId": "dashboardAccountingHealthBannerClicks",
-            "pipeline": [
-                {
-                    "source": {
-                        "featureEvents": {
-                            "featureId": "mC9gfnpcXUq5OoDYemj3_OV5I-g"
-                        },
-                        "timeSeries": {
-                            "period": "dayRange",
-                            "count": 90,
-                            "first": "now() - 90 * 24 * 3600 * 1000"
-                        }
-                    }
-                },
-                {
-                    "cat": null
-                }
-            ]
-        }
+      "response": {
+        "mimeType": "application/json"
+      },
+      "request": {
+        "requestId": "dashboardAccountingHealthBannerClicks",
+        "pipeline": [
+          {
+            "source": {
+              "featureEvents": {
+                "featureId": "mC9gfnpcXUq5OoDYemj3_OV5I-g"
+              },
+              "timeSeries": {
+                "period": "dayRange",
+                "count": 90,
+                "first": "now() - 90 * 24 * 3600 * 1000"
+              }
+            }
+          },
+          {
+            "cat": null
+          }
+        ]
+      }
     }'
   end
 
