@@ -9,12 +9,13 @@ class Aggregator
         "mimeType": "application/json"
       },
       "request": {
-        "requestId": "dashboardAccountingHealthBannerClicks",
+        "requestId": "npsResults",
         "pipeline": [
           {
             "source": {
-              "featureEvents": {
-                "featureId": "mC9gfnpcXUq5OoDYemj3_OV5I-g"
+              "pollsSeen": {
+                 "guideId" : "xNG03TrUPRE0EQK9iahDTNn_Wkg",
+                 "pollId" : "qs5cimm4ctnmte29"
               },
               "timeSeries": {
                 "period": "dayRange",
@@ -33,10 +34,11 @@ class Aggregator
 
   def print_day_counts
     results = Fetcher.perform_query(@query_json)
+    #puts results
     day_counts = {}
     results.each do |row|
       #date = Time.at(row['day']/1000).strftime('%D')
-      date = row['day']/1000
+      date = row['time']/1000
       if !day_counts[date]
         day_counts[date] = 1
       else
