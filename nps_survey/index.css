@@ -1,0 +1,114 @@
+/* --- Selectors from Global CSS --- */
+._pendo-guide-container_ {
+    /* Guide border, shadow, background, etc. */
+    background-color: #3179cd;
+    background-color: rgba(49, 121, 205, .95);
+    opacity: .95;
+    padding: 15px;
+    line-height: 140%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+._pendo-guide-container_ ._pendo-guide-content_ {
+    /* Content area: use for font attributes, padding, etc. */
+    text-align: center;
+    padding: 0;
+    color: #333;
+    margin: auto;
+    max-width: 720px;
+}
+._pendo-poll-question-prompt_ {
+    text-align: left;
+    color: #FFF;
+    font-size: 1.3em;
+}
+._pendo-poll_ ._pendo-poll-npsrating_ {
+    padding: 5px 0;
+}
+._pendo-poll_ ._pendo-poll-npsrating_ ._pendo-poll-npsrating-choices_ label {
+    margin: 0 14px 34px 0;
+    color: #3179cd;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+}
+._pendo-poll_ ._pendo-poll-npsrating_ ._pendo-poll-npsrating-choices_ label span {
+    color: #FFF !important;
+}
+._pendo-poll-npsrating-choices_ {
+    text-align: left;
+}
+._pendo-poll_ ._pendo-poll-npsreason_  {
+    border-top: 0px;
+    padding: 0;
+}
+._pendo-poll_ ._pendo-poll-npsreason_ ._pendo-poll-question-prompt_ {
+    width: 575px;
+    float: right;
+    margin-top: 15px;
+}
+._pendo-poll_ ._pendo-poll-npsreason_ textarea {
+    width: 575px;
+    float: right;
+}
+._pendo-guide-container_ ._pendo-close-guide_ {
+    /* Close guide icon */
+    display: inline;
+    font-size: 26px;
+    font-weight: 100;
+    top: 10px;
+    right: 15px;
+    color: #FFF;
+    /*opacity: 0.6;*/
+}
+._pendo-guide-container_ ._pendo-close-guide_:hover {
+    /* Close guide icon hover effects*/
+    opacity: 0.4;
+}
+
+#nps_header_left{
+    float: left;
+    text-align: right;
+    font-size: 2.4em;
+    line-height: 1em;
+    color: #FFF;
+    max-width: 120px;
+    min-height: 110px;
+    margin-right: 20px;
+    padding: 25px 20px 10px 0;
+    border-right: 1px solid #FFF;
+}
+
+._pendo-poll {
+    float: right;
+}
+
+._pendo-poll-submit-center_ {
+    clear: both;
+    width: 575px;
+    float: right;
+    margin-top: 15px;
+}
+#nps_poll_submit {
+    float: left;
+}
+
+#nps_rule {
+    position: fixed;
+    right: 0;
+    left: 0;
+    border-top: 1px solid #FFF;
+    width: 5000px;
+}
+._pendo-poll-message_ {
+    font-size: 2.5em;
+    color: #FFF;   
+}
+._pendo-poll_ ._pendo-poll-npsrating_ ._pendo-poll-npsrating-choices_ label._pendo-poll-selected_{
+    margin: 0 14px 34px 0;
+    color: #FFF;
+    background-color: #000;
+    border: 1px solid #000;
+}
+._pendo-hidden-item_ { 
+    display: none; 
+}
+
