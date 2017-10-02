@@ -21,8 +21,13 @@ function sendData(accountId, contactId, score, comments) {
         type: "PUT",
         dataType: "json",
         success: function (data) {
-          npsData["survey"] = data
-          recordAnalytics("true", npsData)
+          if (data.includes('Salesforce could not')) {
+            npsData["errorResp"] = data
+            recordAnalytics("false", npsData)
+          } else {
+            npsData["survey"] = data
+            recordAnalytics("true", npsData)
+          }
         },
         error: function (jqXHR, status, error) {
           npsData["status"] = jqXHR.status
@@ -46,4 +51,3 @@ $('#nps_poll_submit').on('click', function() {
 
     sendData(accountId, contactId, selectedNPS, npsComments);
 });
-
